@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class CamBew : MonoBehaviour {
 
+
+
     void Start()
     {
 
     }
+      void Update() {   
+        Camera.main.transform.RotateAround(Camera.main.transform.position,2* Camera.main.transform.right, -Input.GetAxis("Mouse Y"));
+        Camera.main.transform.RotateAround(Camera.main.transform.position,2* Vector3.up, Input.GetAxis("Mouse X"));
 
-    void FixedUpdate()
-    {
-        float x = Input.GetAxis("Mouse X");
-        float y = -Input.GetAxis("Mouse Y");
-        Camera.main.transform.Rotate(x, y, 0);
+        Cursor.lockState = CursorLockMode.Locked;
 
     }
 }
