@@ -8,6 +8,10 @@ public class Kugelerst2 : MonoBehaviour {
     public Color altColor = Color.blue;
 
     // Use this for initialization
+    //genau wie Kugelerst allerdings für den zweiten Spieler
+    //müssen damit eine Kugel gespawnt wird gestartet werden nachdem sie das getan haben sollten sie sich wieder closen
+    //müssen noch verknüpft werden also alle Scripts sind noch sehr unabhängig voneinander
+    //ihr könnten ein Hauptscript erstellen von dem ihr ein script nach dem anderen startet wenn ihr es braucht 
     void Start()
     {
         rend = GetComponent<Renderer>();

@@ -9,6 +9,7 @@ public class CamSwitch : MonoBehaviour {
 
 
     // Use this for initialization
+    // Wechselt die aktive Kamera bei Boccia wenn es gestartet wird aber schließt sich nach dieser aktion wieder
     void Start () {
         if (Camerak.enabled == true)
         {

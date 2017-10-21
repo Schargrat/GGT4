@@ -7,6 +7,8 @@ public class Boccia : MonoBehaviour {
     public Color altColor = Color.red;
 
     // Use this for initialization
+    //erstellt eine Kugel auf einer bestimmten Position mit den Eigenschaften eines festen Körpers also Kollider, rigitbody etc.
+    //nur für den einen Spieler
     void Start () {
         rend = GetComponent<Renderer>();
         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
