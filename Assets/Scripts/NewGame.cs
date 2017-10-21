@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ClickExample : MonoBehaviour
+public class NewGame : MonoBehaviour
 {
-    public void loadmain()
+    public void Loadmain()
     {
-        SceneManager.LoadScene("mainscene", LoadSceneMode.Additive);
+        SceneManager.LoadScene(sceneName: "mainscene", mode: LoadSceneMode.Single);
     }
 
 }

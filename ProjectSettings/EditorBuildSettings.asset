@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/mainmenu.unity
+    guid: 56d50af9163e43e408bd76c7b784c92c
+  - enabled: 1
+    path: Assets/mainscene.unity
+    guid: 96974216061f55147aa68ffc89e3326d
+  - enabled: 1
+    path: Assets/Boccia.unity
+    guid: a650470385d08f74e8ac680b4b188db4

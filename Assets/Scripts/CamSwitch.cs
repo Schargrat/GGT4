@@ -5,20 +5,19 @@ using UnityEngine;
 public class CamSwitch : MonoBehaviour {
 
     public Camera Camerak;
-    private Camera camerat;
+    public Camera Camerat;
 
-    public Camera Camerat { get => camerat; set => camerat = value; }
 
     // Use this for initialization
     void Start () {
         if (Camerak.enabled == true)
         {
-            Camerak = false;
-            Camerat = true;
+            Camerak.enabled = false;
+            Camerat.enabled = true;
         } else
         {
-            Camerak = true;
-            Camerat = false;
+            Camerak.enabled = true;
+            Camerat.enabled = false;
         }
 	}
 	
